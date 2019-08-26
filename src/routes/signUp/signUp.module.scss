@@ -1,0 +1,11 @@
+@import '../../utils/globals';
+.bkg {
+  display: flex;
+}
+
+.btnMain{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  vertical-align: middle;
+}

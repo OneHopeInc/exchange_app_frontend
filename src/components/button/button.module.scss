@@ -1,0 +1,24 @@
+@import '../../utils/globals';
+
+
+.btn{
+    @include wide-text;
+    background-color: $orange;
+    border-radius: 25px;
+    border: none;
+    outline:none;
+    text-transform: uppercase;
+    font-family: $paragraph;
+    font-size: $smallFont;
+}
+
+.btnLarge{
+    @extend .btn;
+    height: 50px;
+    width: 280px;
+    color: $white;
+    &:hover{
+        background-color: $plum;
+
+    }
+}

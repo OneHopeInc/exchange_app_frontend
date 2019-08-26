@@ -1,0 +1,14 @@
+@import '../../utils/globals';
+.layer {
+  background-color: $lightBlue;
+  margin-top:-25px;
+  height: 70vh;
+  // font-family: $paragraph;
+}
+
+.btnMain{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  vertical-align: middle;
+}

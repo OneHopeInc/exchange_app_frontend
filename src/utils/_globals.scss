@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700|Gothic+A1:300,400,500,600,700,800,900|Roboto&display=swap');
+
+//colors
+$lightBlue: #A5D9E7;
+$mediumBlue: #8DC8E8;
+$orange: #EF4E25;
+$grey: #D9D9D6 ;
+$mediumGrey: #C4Bcb7;
+$periwinkle: #CBD3EB;
+$plum: #B86B78;
+$yellow: #FFE600 ;
+$white: #FFF;
+
+//mediaSizes
+$break-xs: 320px;
+$break-small: 480px;
+
+$break-large: 1200px;
+
+
+//fontsizes
+$smallFont: 12px;
+$mediumFont: 16px;
+
+$title:'Gothic A1-Black', sans-serif;
+$subtitle: 'Fira Mono', monospace;
+$paragraph: 'Gothic A1', sans-serif;
+
+body{
+    font-family: $paragraph;
+}
+
+h1,h2,h3{
+    font-family: $title;
+}
+
+h4,h5,h6{
+    font-family: $subtitle;
+}
+
+@mixin wide-text{
+    letter-spacing: 3pt;
+    line-height: 1.6;
+}
+

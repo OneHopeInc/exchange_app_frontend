@@ -1,0 +1,26 @@
+@import '../../utils/globals';
+
+.nav{
+    color: $orange;
+    padding: 50px 100px 50px 50px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    @media screen and (max-width: $break-small) {
+        padding: 50px 0;
+        justify-content: space-around;
+      }
+    li{
+        @include wide-text;
+        list-style-type: none;
+        margin: 0 25px;
+        text-transform: uppercase;
+        font-size: $smallFont;
+        font-family: $title;
+    &:hover{
+        border-bottom: 2px solid $orange;
+    }
+    }
+}
