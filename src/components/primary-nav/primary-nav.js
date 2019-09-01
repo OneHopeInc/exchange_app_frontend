@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './primary-nav.module.scss'
-import { BrowserRouter as Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 export default function PrimaryNav() {
   return (

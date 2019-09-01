@@ -13,14 +13,20 @@
         justify-content: space-around;
       }
     li{
-        @include wide-text;
         list-style-type: none;
-        margin: 0 25px;
-        text-transform: uppercase;
-        font-size: $smallFont;
-        font-family: $title;
-    &:hover{
-        border-bottom: 2px solid $orange;
-    }
+        
+        a{
+            @include wide-text;
+            text-decoration: none;
+            color: $orange;
+            margin: 0 25px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            font-size: $smallFont;
+            font-family: $title;
+            &:hover{
+                border-bottom: 2px solid $orange;
+            }
+        }
     }
 }

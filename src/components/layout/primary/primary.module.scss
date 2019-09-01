@@ -1,0 +1,52 @@
+@import '../../../utils/globals';
+
+
+.flex{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.colLeft{
+flex: 2;
+background-color: $mediumBlue;
+color: $white;
+justify-content: center;
+align-content: center;
+@media screen and (max-width: $break-small) {
+    flex-basis: 100%;
+  }
+}
+
+.colRight{
+flex: 3;
+background-color: $white;
+justify-content: center;
+text-align: center;
+margin: auto;
+@media screen and (max-width: $break-small) {
+    flex-basis: 100%;
+  }
+}
+
+
+.backBtn{
+  text-align: left;
+  margin-left: 20px;
+color: $orange;
+  i{
+    font-size: 30px;
+    margin-left: 10px;
+
+  }
+  p{
+    font-size: $smallFont;
+  }
+
+  &:hover{
+    color: $plum;
+  }
+
+}
+

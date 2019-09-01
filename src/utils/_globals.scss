@@ -26,18 +26,6 @@ $title:'Gothic A1-Black', sans-serif;
 $subtitle: 'Fira Mono', monospace;
 $paragraph: 'Gothic A1', sans-serif;
 
-body{
-    font-family: $paragraph;
-}
-
-h1,h2,h3{
-    font-family: $title;
-}
-
-h4,h5,h6{
-    font-family: $subtitle;
-}
-
 @mixin wide-text{
     letter-spacing: 3pt;
     line-height: 1.6;

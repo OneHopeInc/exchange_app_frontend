@@ -6,7 +6,46 @@
   max-width: 100%;
 }
 
+body{
+  font-family: $paragraph;
+}
+
+h1,h2,h3{
+  font-family: $title;
+  color: $orange;
+}
+h1{
+  letter-spacing: 3pt;
+  text-transform: uppercase;
+  font-weight: 800;
+
+}
+h4,h5,h6{
+  font-family: $subtitle;
+  color: $mediumGrey;
+}
+
+h5{
+  letter-spacing: 2pt;
+  text-transform: uppercase;
+}
+
+a{
+  text-decoration: underline;
+  color: $mediumGrey;
+  text-transform: uppercase;
+  outline: none;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+// *:not(path):not(g) {    
+//   color: hsla(210, 100%, 100%, 0.9) !important;    
+//   background:hsla(210, 100%,  50%, 0.5) !important;    
+//   outline:solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+//   box-shadow: none !important;
+// }
+
