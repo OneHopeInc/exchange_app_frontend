@@ -71,7 +71,7 @@ export default class Login extends React.Component {
         this.props.history.push('/')
       })
       .catch(error => {
-        alert.error(
+        alert(
           (error && error.message) ||
             'Oops! Something went wrong. Please try again!'
         )
@@ -125,6 +125,7 @@ export default class Login extends React.Component {
                 type="email"
                 required="required"
                 onChange={this.handleInputChange}
+                value={this.state.email}
               />
               <TextInput
                 text="Password"
@@ -133,6 +134,7 @@ export default class Login extends React.Component {
                 size="large"
                 required="required"
                 onChange={this.handleInputChange}
+                value={this.state.password}
               />
             </div>
 

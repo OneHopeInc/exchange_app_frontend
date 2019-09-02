@@ -9,6 +9,13 @@ import PrimaryLayout, {
   RightAlign
 } from '../../components/layout/primary/primary-layout'
 import TextInput from '../../components/text-input'
+import {
+  GOOGLE_AUTH_URL,
+  FACEBOOK_AUTH_URL,
+  GITHUB_AUTH_URL,
+  ACCESS_TOKEN
+} from '../../utils/constants'
+import { signup } from '../../utils/APIutils'
 
 export default function SignUp() {
   return (
@@ -17,9 +24,18 @@ export default function SignUp() {
       <RightAlign>
         <h1>Sign Up for Exchange</h1>
         <div className={styles.socialForm}>
-          <Button icon={<i className="fa fa-facebook"></i>} btn_style="icon" />
-          <Button icon={<i className="fa fa-github"></i>} btn_style="icon" />
-          <Button icon={<i className="fa fa-google"></i>} btn_style="icon" />
+          <a href={FACEBOOK_AUTH_URL}>
+            <Button
+              icon={<i className="fa fa-facebook"></i>}
+              btn_style="icon"
+            />
+          </a>
+          <a href={GITHUB_AUTH_URL}>
+            <Button icon={<i className="fa fa-github"></i>} btn_style="icon" />
+          </a>
+          <a href={GOOGLE_AUTH_URL}>
+            <Button icon={<i className="fa fa-google"></i>} btn_style="icon" />
+          </a>
         </div>
         <h5>Or Use Your Email Address</h5>
 

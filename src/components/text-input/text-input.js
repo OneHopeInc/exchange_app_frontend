@@ -13,6 +13,7 @@ export default function TextInput(props) {
           value={props.value}
           className={styles.inputField}
           required={props.required}
+          onChange={props.onChange}
         />
       </div>
     )
@@ -21,10 +22,12 @@ export default function TextInput(props) {
       <div>
         <p>Last name:</p>
         <input
-          type="text"
-          name="lastname"
-          value="Mouse"
+          type={props.type}
+          name={props.name}
+          value={props.value}
+          className={styles.inputField}
           required={props.required}
+          onChange={props.onChange}
         />
       </div>
     )
