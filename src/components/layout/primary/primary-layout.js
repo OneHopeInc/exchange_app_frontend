@@ -3,14 +3,22 @@ import styles from './primary.module.scss'
 import PrimaryNav from '../../../components/primary-nav'
 import Button from '../../../components/button'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
+import logo from '../../../assets/images/indigitous.svg'
 
 export default function PrimaryLayout(props) {
-  console.log(props.children)
   return <div className={styles.flex}>{props.children}</div>
 }
 
 export function LeftAlign(props) {
-  return <div className={styles.colLeft}>{props.children}</div>
+  return (
+    <div className={styles.colLeft}>
+      <div className={styles.layer}></div>
+      <div className={styles.logoContainer}>
+        <img src={logo} className={styles.logo} />
+      </div>
+      <div className={styles.textContainer}>{props.children}</div>
+    </div>
+  )
 }
 
 export function RightAlign(props) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import styles from './signUp.module.scss'
 import PrimaryNav from '../../components/primary-nav'
@@ -20,7 +20,12 @@ import { signup } from '../../utils/APIutils'
 export default function SignUp() {
   return (
     <PrimaryLayout>
-      <LeftAlign></LeftAlign>
+      <LeftAlign>
+        <h2>
+          Beacuse you care about Jesus, technology, design, evangelism and
+          discipleship and we think that's awesome.
+        </h2>
+      </LeftAlign>
       <RightAlign>
         <h1>Sign Up for Exchange</h1>
         <div className={styles.socialForm}>
@@ -50,7 +55,7 @@ export default function SignUp() {
         </div>
 
         <div className={styles.btnMain}>
-          <Link to="/signup">
+          <Link to="/identity/">
             <Button text="Sign Up" btn_style="large" />
           </Link>
         </div>

@@ -3,6 +3,13 @@ import styles from './button.module.scss'
 
 export default function Button(props) {
   let style = props.btn_style
+  if (style === 'xlarge') {
+    return (
+      <button type={props.type} className={styles.btnxLarge}>
+        <span>{props.text}</span>
+      </button>
+    )
+  }
   if (style === 'large') {
     return (
       <button type={props.type} className={styles.btnLarge}>

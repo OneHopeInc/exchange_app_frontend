@@ -1,14 +1,31 @@
 @import '../../utils/globals';
-.layer {
-  background-color: $lightBlue;
+.bkg {
+  background: $mediumBlue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top, $mediumBlue 80% , $white 20%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom, $mediumBlue 80%, $white  20%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom, $mediumBlue 80%, $white  20%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, $mediumBlue 80% , $white  20%); /* Standard syntax */
   margin-top:-25px;
-  height: 70vh;
-  // font-family: $paragraph;
-}
+  }
 
 .btnMain{
+  position:absolute; 
+    top:60%; 
+    left:50%; 
+    transform:translate(-50%, -60%); 
+    text-align: center;
+}
+
+.imageContainer{
   display: flex;
   flex:1;
   justify-content: center;
   vertical-align: middle;
+  margin: auto;
+  height: 80vh;
+}
+
+.image{
+  object-fit: contain;
+  // opacity: 1;
 }

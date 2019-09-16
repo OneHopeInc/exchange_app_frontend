@@ -2,7 +2,7 @@
 
 .nav{
     color: $orange;
-    padding: 50px 100px 50px 50px;
+    padding: 50px 100px 35px 50px;
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
@@ -29,4 +29,17 @@
             }
         }
     }
+}
+
+.logoContainer{
+    position: absolute;
+    top: 5px;
+    left: 70px;
+
+}
+
+.logo{
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
 }
