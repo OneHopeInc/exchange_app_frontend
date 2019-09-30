@@ -1,97 +1,46 @@
 @import '../../utils/globals';
 
-
 .btn{
-    @include wide-text;
-    background-color: $orange;
+    background-color: $white;
     border-radius: 25px;
-    border: none;
     outline: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: $paragraph;
-    font-size: $smallFont;
+   
+    color: $orange
 }
 
 .btnLarge{
     @extend .btn;
     height: 50px;
-    width: 280px;
-    color: $white;
+    display: inline-block;
     &:hover{
-        background-color: $plum;
+        background-color: $yellow;
+        border:none;
 
     }
     font-family: $paragraph;
     font-size: $mediumFont;
     letter-spacing: 1.5;
+    margin: 10px;
+    font-size: $mediumFont;
+    border: 1px solid $orange;
+    padding: 10px 40px;
+
 }
 
 .btnxLarge{
     @extend .btn;
     height:55px;
-    width: 280px;
-    color: $white;
-    transition: all 0.5s;
+    width:60%;
+    margin: 10px 0;
     &:hover{
-        background-color: transparent;
-        -webkit-box-shadow: none;
-    box-shadow: none;
-        // background-color: $plum;
-        // -webkit-box-shadow: 0px 5px 8px 2px rgba(184, 107, 120, 0.33); 
-        // box-shadow: 0px 5px 8px 2px rgba(184, 107, 120, 0.33);
+        background-color: $yellow;
+        border:none;
     }
-   
-    -webkit-box-shadow: 0px 5px 8px 2px rgba(239, 78, 37, 0.33); 
-    box-shadow: 0px 5px 8px 2px rgba(239, 78, 37, 0.33);
-
-}
-
-.btnxLarge span {
-	z-index: 2;	
-	display: block;
-	position: absolute;
-	width: 100%;
-    height: 100%;	
-    font-family: $paragraph;
     font-size: $mediumFont;
-    letter-spacing: 1.5px;
-    top:30%;
-    left:0;
 }
-.btnxLarge::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.5s;
-	background-color: $orange;
-    border-radius: 25px;
 
-}
-.btnxLarge::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.5s;
-    background-color: $orange;
-    border-radius: 25px;
-
-}
-.btnxLarge:hover::before {
-  transform: rotate(-45deg);
-  background-color: $orange;
-}
-.btnxLarge:hover::after {
-  transform: rotate(45deg);
-  background-color: $orange;
-}
 .btnIcon{
     border-radius: 50%;
     width: 50px;
@@ -109,4 +58,16 @@
         color: $plum;
 
     }
+}
+
+
+.btnxSmall{
+    @extend .btn;
+    border: 1px solid $mediumBlue;
+    color:$mediumBlue;
+    font-size: $smallFont;
+height: 25px;
+padding: 5px 15px;
+margin: 0px 3px;
+
 }

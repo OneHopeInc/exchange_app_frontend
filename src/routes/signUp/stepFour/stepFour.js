@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Link } from 'react-router-dom'
 
-import styles from './stepTwo.module.scss'
+import styles from './stepFour.module.scss'
 import PrimaryNav from '../../../components/primary-nav'
 import Button from '../../../components/button'
 import PrimaryLayout, {
@@ -13,17 +13,15 @@ import Pill from '../../../components/pills'
 
 import Skills from '../../../utils/data/skills.json'
 
-export default function StepTwo() {
+export default function StepFour() {
   return (
     <PrimaryLayout>
       <LeftAlign>
-        <h2>
-          We'll introduce you, because we think that{' '}
-          <u>together, nothing is impossible.</u>
-        </h2>
+        <h2>You're doing an awesome job signing up!</h2>
+        <h2>Remember you can skip at any time and complete at a later date.</h2>
       </LeftAlign>
       <RightAlign>
-        <h1>What are you good at?</h1>
+        <h1>What are your ministry passions?</h1>
         <h5>Select all that apply</h5>
 
         <div className={styles.scrollRow}>
@@ -33,7 +31,7 @@ export default function StepTwo() {
         </div>
 
         <div className={styles.btnMain}>
-          <Link to="/involvement">
+          <Link to="/bio">
             <Button text="Next" btn_style="large" />
           </Link>
         </div>

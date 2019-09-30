@@ -9,7 +9,7 @@ body{
   font-family: $paragraph;
 }
 
-h1,h2,h3{
+h1,h2{
   font-family: $title;
   color: $orange;
 }
@@ -19,6 +19,16 @@ h1{
   font-weight: 800;
 
 }
+
+h3{
+  letter-spacing: 2pt;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: $mediumBlue;
+  font-size: $biggerFont;
+  line-height: 1rem;
+}
+
 h4,h5,h6{
   font-family: $subtitle;
   color: $mediumGrey;

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './button.module.scss'
+import styles from './pills.module.scss'
 
 export default function Pills(props) {
   let style = props.btn_style
@@ -18,6 +18,12 @@ export default function Pills(props) {
     )
   } else if (style === 'icon') {
     return <button className={styles.btnIcon}>{props.icon}</button>
+  } else if (style === 'btnxSmall') {
+    return (
+      <button type={props.type} className={styles.btnxSmall}>
+        {props.text}
+      </button>
+    )
   } else {
     return <button type="button">Click Me</button>
   }

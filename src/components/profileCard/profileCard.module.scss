@@ -1,0 +1,54 @@
+@import '../../utils/globals';
+
+.profileBorder{
+    width: 400px;
+    height:420px;
+    border: 1px solid $grey;
+    border-radius: 10px;
+    margin:auto;
+  }
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:nowrap;
+  margin: 30px 30px 0px 30px;
+}
+
+.footerRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+  margin:0px 20px;
+}
+
+.textHolder{
+margin-left:20px;
+text-align: left;
+}
+
+.photoHolder{
+  width: 120px;
+  height:120px;
+  background-color: $grey;
+  border-radius: 10%;
+  margin-bottom: 30px;
+}
+
+.smallText{
+  color:$mediumGrey;
+  font-size: $smallFont;
+  font-family: $subtitle;
+  line-height: .1rem;
+}
+
+.paragraphRow{
+  text-align: left;
+  margin: 0px 30px;
+}
+
+
+
+
