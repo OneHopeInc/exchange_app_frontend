@@ -7,7 +7,9 @@ export default function ConnectionCard() {
   return (
     <div className={styles.cardBorder}>
       <div className={styles.row}>
-        <div className={styles.photoHolder}></div>
+        <div className={styles.photoContainer}>
+          <div className={styles.photoHolder}></div>
+        </div>
         <div className={styles.textHolder}>
           <h4>Liam Savage</h4>
           <h5 className={styles.smallText}>56 connections</h5>
