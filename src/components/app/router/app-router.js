@@ -2,6 +2,7 @@ import React from 'react'
 import Home from '../../../routes/home'
 import SignUp from '../../../routes/signUp'
 import Login from '../../../routes/login'
+import Connections from '../../../routes/connections'
 import OAuth2RedirectHandler from '../../../routes/oauth2'
 import StepOne from '../../../routes/signUp/stepOne'
 import StepTwo from '../../../routes/signUp/stepTwo'
@@ -10,6 +11,7 @@ import StepFour from '../../../routes/signUp/stepFour'
 import Bio from '../../../routes/signUp/bio'
 import ProfileConfirmation from '../../../routes/signUp/profile'
 import Setup from '../../../routes/setup/intro'
+
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 export default function AppRouter() {
@@ -26,6 +28,9 @@ export default function AppRouter() {
       <Route path="/setup/" component={Setup} />
 
       <Route path="/login/" component={Login} />
+
+      <Route path="/connections/" component={Connections} />
+
       <Route path="/oauth2/redirect" component={OAuth2RedirectHandler}></Route>
       {/* <Route component={NotFound}></Route> */}
     </Router>

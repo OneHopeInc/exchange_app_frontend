@@ -19,8 +19,8 @@ export default function TextInput(props) {
     )
   } else if (size === 'small') {
     return (
-      <div>
-        <p>Last name:</p>
+      <div className={styles.smallInput}>
+        <p className={styles.inputText}>{props.text}</p>
         <input
           type={props.type}
           name={props.name}
@@ -31,7 +31,33 @@ export default function TextInput(props) {
         />
       </div>
     )
+  } else if (size === 'search') {
+    return (
+      <div className={styles.searchInput}>
+        <p className={styles.inputText}>{props.text}</p>
+        <input
+          type={props.type}
+          name={props.name}
+          value={props.value}
+          className={styles.searchInputField}
+          required={props.required}
+          onChange={props.onChange}
+        />
+      </div>
+    )
   } else {
-    return <button type="button">Click Me</button>
+    return (
+      <div>
+        <p>TextInput:</p>
+        <input
+          type={props.type}
+          name={props.name}
+          value={props.value}
+          className={styles.inputField}
+          required={props.required}
+          onChange={props.onChange}
+        />
+      </div>
+    )
   }
 }

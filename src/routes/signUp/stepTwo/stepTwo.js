@@ -38,7 +38,7 @@ export default function StepTwo() {
           </Link>
         </div>
         <h6>
-          <Link to="/login">Skip</Link>
+          <Link to="/connections">Skip</Link>
         </h6>
       </RightAlign>
     </PrimaryLayout>

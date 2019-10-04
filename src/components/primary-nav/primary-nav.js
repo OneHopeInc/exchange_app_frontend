@@ -6,9 +6,6 @@ import logo from '../../assets/images/indigitous.svg'
 export default function PrimaryNav() {
   return (
     <nav>
-      <div className={styles.logoContainer}>
-        <img src={logo} className={styles.logo} />
-      </div>
       <ul className={styles.nav}>
         <li>
           <Link to="/login">Login</Link>

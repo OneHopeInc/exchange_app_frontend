@@ -31,13 +31,10 @@ export default function ProfileConfirmation() {
         </div>
 
         <div className={styles.btnMain}>
-          <Link to="/setup">
-            <Button text="Next" btn_style="large" />
+          <Link to="/connections">
+            <Button text="Let Me In!" btn_style="large" />
           </Link>
         </div>
-        <h6>
-          <Link to="/login">Skip</Link>
-        </h6>
       </RightAlign>
     </PrimaryLayout>
   )

@@ -27,5 +27,27 @@ margin-bottom: 4px;
     border-radius: 50px;
     outline: none;
     padding: 10px 30px;
+}
+
+.searchInput{
+    width: 250px;
+    margin-bottom: 10px;
+    margin-right:30px;
+    @media screen and (max-width: $break-small) {
+        width: 200px;
+      }
+    
+}
+
+.searchInputField{
+    background-color: rgba(217, 217, 214, 0.21);
+    border: none;
+    font-size: $smallFont;
+    width: 85%;
+    height: 20px;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px 30px;
 
 }
+

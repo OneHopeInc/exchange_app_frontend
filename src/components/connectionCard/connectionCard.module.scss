@@ -1,0 +1,48 @@
+@import '../../utils/globals';
+
+.cardBorder{
+    width: 300px;
+    height:150px;
+    border: 1px solid $grey;
+    margin: 10px;
+  }
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:nowrap;
+  margin: 15px;
+}
+
+
+.footerRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+  margin:0px 20px;
+}
+
+
+.photoHolder{
+  width: 80px;
+  height:80px;
+  background-color: $lightGrey;
+}
+
+.smallText{
+  color:$mediumGrey;
+  font-size: $smallFont;
+  font-family: $subtitle;
+  line-height: .1rem;
+}
+
+.paragraphRow{
+  text-align: left;
+  margin: 0px 30px;
+}
+
+
+
+
