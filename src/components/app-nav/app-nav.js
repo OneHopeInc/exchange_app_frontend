@@ -6,9 +6,6 @@ import logo from '../../assets/images/indigitous.svg'
 export default function AppNav(props) {
   return (
     <nav className={styles.container}>
-      <div className={styles.logoContainer}>
-        <img src={logo} className={styles.logo} />
-      </div>
       <ul className={styles.nav}>
         {props.activeNav == 'Connections' ? (
           <li className={styles.activeNav}>
