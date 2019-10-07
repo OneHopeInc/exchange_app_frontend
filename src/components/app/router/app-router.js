@@ -3,6 +3,7 @@ import Home from '../../../routes/home'
 import SignUp from '../../../routes/signUp'
 import Login from '../../../routes/login'
 import Connections from '../../../routes/connections'
+import Calendar from '../../../routes/calendar'
 import OAuth2RedirectHandler from '../../../routes/oauth2'
 import StepOne from '../../../routes/signUp/stepOne'
 import StepTwo from '../../../routes/signUp/stepTwo'
@@ -30,6 +31,7 @@ export default function AppRouter() {
       <Route path="/login/" component={Login} />
 
       <Route path="/connections/" component={Connections} />
+      <Route path="/calendar/" component={Calendar} />
 
       <Route path="/oauth2/redirect" component={OAuth2RedirectHandler}></Route>
       {/* <Route component={NotFound}></Route> */}

@@ -29,6 +29,12 @@
 
 }
 
+.btnLarge_selected{
+@extend .btnLarge;
+background-color: $yellow;
+        border:none;
+}
+
 .btnxLarge{
     @extend .btn;
     height:55px;
@@ -41,6 +47,12 @@
     font-size: $mediumFont;
 }
 
+.btnxLarge_selected{
+    @extend .btnxLarge;
+    background-color: $yellow;
+            border:none;
+    }
+    
 .btnIcon{
     border-radius: 50%;
     width: 50px;

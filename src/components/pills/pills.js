@@ -1,18 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './pills.module.scss'
 
+//initial selected state
+let initialSelected = false
+
 export default function Pills(props) {
+  let [selected, setSelected] = useState(false, 0)
+
   let style = props.btn_style
   if (style === 'xlarge') {
-    return (
-      <button type={props.type} className={styles.btnxLarge}>
+    return selected ? (
+      <button
+        type={props.type}
+        className={styles.btnxLarge_selected}
+        onClick={() => {
+          setSelected((selected = false))
+          props.onClick()
+        }}
+      >
         <span>{props.text}</span>
+      </button>
+    ) : (
+      <button
+        type={props.type}
+        className={styles.btnxLarge}
+        onClick={() => {
+          setSelected((selected = true))
+          props.onClick()
+        }}
+      >
+        {props.text}
       </button>
     )
   }
   if (style === 'large') {
-    return (
-      <button type={props.type} className={styles.btnLarge}>
+    return selected ? (
+      <button
+        type={props.type}
+        className={styles.btnLarge_selected}
+        onClick={() => {
+          setSelected((selected = false))
+          props.onClick()
+        }}
+      >
+        {props.text}
+      </button>
+    ) : (
+      <button
+        type={props.type}
+        className={styles.btnLarge}
+        onClick={() => {
+          setSelected((selected = true))
+          props.onClick()
+        }}
+      >
         {props.text}
       </button>
     )

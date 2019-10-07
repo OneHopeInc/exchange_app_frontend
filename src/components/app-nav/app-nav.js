@@ -9,19 +9,31 @@ export default function AppNav(props) {
       <ul className={styles.nav}>
         {props.activeNav == 'Connections' ? (
           <li className={styles.activeNav}>
-            <Link to="/">Connections</Link>
+            <Link to="/connections">Connections</Link>
           </li>
         ) : (
           <li className={styles.inactiveNav}>
-            <Link to="/">Connections</Link>
+            <Link to="/connections">Connections</Link>
           </li>
         )}
-        <li className={styles.inactiveNav}>
-          <Link to="/">Calender</Link>
-        </li>
-        <li className={styles.inactiveNav}>
-          <Link to="/">Exchange</Link>
-        </li>
+        {props.activeNav == 'Calendar' ? (
+          <li className={styles.activeNav}>
+            <Link to="/calendar">Calender</Link>
+          </li>
+        ) : (
+          <li className={styles.inactiveNav}>
+            <Link to="/calendar">Calender</Link>
+          </li>
+        )}
+        {props.activeNav == 'Exchange' ? (
+          <li className={styles.activeNav}>
+            <Link to="/exchange">Exchange</Link>
+          </li>
+        ) : (
+          <li className={styles.inactiveNav}>
+            <Link to="/exchange">Exchange</Link>
+          </li>
+        )}
       </ul>
     </nav>
   )

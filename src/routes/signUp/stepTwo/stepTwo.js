@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Link } from 'react-router-dom'
 
 import styles from './stepTwo.module.scss'
-import PrimaryNav from '../../../components/primary-nav'
 import Button from '../../../components/button'
 import PrimaryLayout, {
   LeftAlign,
@@ -14,6 +13,25 @@ import Pill from '../../../components/pills'
 import Skills from '../../../utils/data/skills.json'
 
 export default function StepTwo() {
+  let [selectedList] = useState([])
+
+  //add or remove Skill from selected List
+  function handlePillSelect(skill) {
+    //find Skill in current list
+    let skillAlreadySelected = selectedList.find(s => s == skill)
+    //if skill found, remove from list
+    if (skillAlreadySelected) {
+      selectedList = selectedList.filter(
+        skill => skill !== skillAlreadySelected
+      )
+      console.log(selectedList)
+    } else {
+      // skill not found, add to list
+      selectedList.push(skill)
+    }
+    console.log(selectedList)
+  }
+
   return (
     <PrimaryLayout>
       <LeftAlign>
@@ -28,7 +46,14 @@ export default function StepTwo() {
 
         <div className={styles.scrollRow}>
           {Skills.map((skill, key) => {
-            return <Pill btn_style="large" text={skill} key={key} />
+            return (
+              <Pill
+                btn_style="large"
+                text={skill}
+                key={key}
+                onClick={() => handlePillSelect(skill)}
+              />
+            )
           })}
         </div>
 
