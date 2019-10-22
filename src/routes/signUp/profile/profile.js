@@ -31,7 +31,7 @@ export default function ProfileConfirmation() {
         </div>
 
         <div className={styles.btnMain}>
-          <Link to="/connections">
+          <Link to="/setup-intro">
             <Button text="Let Me In!" btn_style="large" />
           </Link>
         </div>

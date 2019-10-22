@@ -1,0 +1,36 @@
+@import '../../utils/globals';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin:30px;
+}
+
+.subtitle{
+    font-size: $bigFont;
+    line-height: 1;
+}
+
+.subtext{
+    font-size: $mediumFont;
+    color: $mediumGrey;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.btn{
+    align-self: flex-end;
+    margin-right:40px;
+    margin-top:40px;
+
+}

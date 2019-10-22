@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Link } from 'react-router-dom'
 import LeftProfile from '../../components/left-profile'
 import UserConnections from '../../components/userConnections'
 
-export default function Dashboard() {
+export default function Dashboard(props) {
   return (
     <AppLayout activeNav="Connections">
       <div className={styles.container}>

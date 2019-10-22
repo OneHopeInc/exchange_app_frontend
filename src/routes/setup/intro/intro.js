@@ -19,7 +19,7 @@ export default function Intro() {
           <h1>Ready for your first meeting?</h1>
 
           <div className={styles.btnMain}>
-            <Link to="/">
+            <Link to="/setup">
               <Button text="Let's Go!" btn_style="large" inverse="inverse" />
             </Link>
           </div>

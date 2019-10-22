@@ -132,3 +132,41 @@
     }
 
 }
+
+.btnMedium{
+    @extend .btn;
+    height:40px;
+    width: 140px;
+    color: $white;
+    letter-spacing: .5;
+    &:hover{
+        background-color: $plum;
+    }
+
+}
+
+.btnCancel{
+    @extend .btn;
+    height:50px;
+    width: 160px;
+    background-color: $red;
+    color: $white;
+    margin:40px;
+    &:hover{
+        background-color: $plum;
+    }
+
+}
+
+.btnApprove{
+    @extend .btn;
+    height:50px;
+    width: 160px;
+    background-color: $green;
+    color: $white;
+    margin:40px;
+    &:hover{
+        background-color: $plum;
+    }
+
+}

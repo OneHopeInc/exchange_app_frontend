@@ -1,0 +1,30 @@
+@import '../../utils/globals';
+
+.iconBtn{
+  width: 200px;
+  height: 200px;
+  border: 1px solid $grey;
+  padding:10px;
+  border-radius: 15px;
+  text-align: center;
+  margin:5px;
+  cursor: pointer;
+  &:hover{
+      background-color: $yellow;
+      border:none;
+  }
+  @media screen and (min-width: $break-large) {
+      width: 200px;
+      height: 200px;
+    }
+}
+
+.iconBtn_selected{
+  @extend .iconBtn;
+  background-color: $yellow;
+}
+
+.icon{
+  width: 80%;
+  height: 80%;
+}
