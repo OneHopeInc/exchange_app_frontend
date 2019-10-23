@@ -49,6 +49,12 @@ a{
   outline: none;
 }
 
+p{
+  font-family: $paragraph;
+  color:$darkGrey;
+  font-size: $paragraphFont;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

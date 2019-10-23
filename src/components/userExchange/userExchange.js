@@ -2,6 +2,7 @@ import React from 'react'
 import ProfileCard from '../profileCard'
 import Button from '../button'
 import styles from './userExchange.module.scss'
+import ExchangeIcon from '../../assets/images/icons/exchange-arrows.svg'
 
 export default function UserExchange() {
   return (
@@ -16,6 +17,7 @@ export default function UserExchange() {
         </h3>
         <div className={styles.row}>
           <ProfileCard />
+          <img src={ExchangeIcon} className={styles.exchangeIcon} />
           <ProfileCard />
         </div>
       </div>

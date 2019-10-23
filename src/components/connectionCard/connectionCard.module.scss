@@ -3,7 +3,7 @@
 .cardBorder{
     width: 300px;
     height:140px;
-    border: 1px solid $grey;
+    border: 1px solid $lightGrey;
     margin: 10px;
   }
 
@@ -37,10 +37,16 @@
 .textHolder{
 margin-top:-15px;
 }
+
+.title{
+color:$darkGrey;
+font-family: $paragraph;
+}
+
 .smallText{
-  color:$mediumGrey;
+  color:$darkGrey;
+font-family: $paragraph;
   font-size: $smallFont;
-  font-family: $subtitle;
   line-height: .1rem;
 }
 

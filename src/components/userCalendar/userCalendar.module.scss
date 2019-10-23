@@ -6,6 +6,10 @@
   position: relative;
   margin-left: 27%;
   padding-right: 20px;
+  @media screen and (max-width: $break-small) {
+    width:100%;
+    margin: 65% 0 0 10px;
+  }
 }
 
 .row{
@@ -15,6 +19,9 @@
   flex-wrap:wrap;
   margin:auto;
   margin-top:50px;
+  @media screen and (max-width: $break-small) {
+    justify-content: center;
+  }
 }
 
 .sectionHeader{
@@ -32,6 +39,15 @@
     margin-right:50px;
     margin-bottom:50px;
     padding: 15px;
+    @media screen and (max-width: $break-small) {
+      width:100%;
+      min-height: 300px;
+      height:300px;
+      overflow:scroll;
+      margin:0;
+      margin-bottom: 10px;
+    }
+    
 }
 
 

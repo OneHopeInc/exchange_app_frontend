@@ -26,7 +26,7 @@ margin:25px 0;
 
 .projectTitle{
   color:$black;
-  font-family: $title;
+  font-family: $paragraph;
 }
 
 .description{
@@ -44,7 +44,10 @@ margin:25px 0;
 
 .type{
   font-size: $smallFont;
+}
 
+.exchangeIcon{
+  width:20px;
 }
 
 

@@ -11,7 +11,7 @@ export default function ConnectionCard() {
           <div className={styles.photoHolder}></div>
         </div>
         <div className={styles.textHolder}>
-          <h4>Liam Savage</h4>
+          <h4 className={styles.title}>Liam Savage</h4>
           <h5 className={styles.smallText}>56 connections</h5>
           <div className={styles.footerRow}>
             <Pills btn_style="btnxSmall" text="UX/UI" />

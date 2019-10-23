@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './calendarItem.module.scss'
+import ExchangeIcon from '../../assets/images/icons/exchange-arrows.svg'
 
 export default function CalendarItem(props) {
   const type = props.type
@@ -9,6 +10,7 @@ export default function CalendarItem(props) {
         <div>
           <div className={styles.row}>
             <div className={styles.photoHolder}></div>
+            <img src={ExchangeIcon} className={styles.exchangeIcon} />
             <div className={styles.photoHolder}></div>
           </div>
           <div className={styles.time}>

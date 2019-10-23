@@ -46,15 +46,36 @@ text-align: left;
 }
 
 .smallText{
-  color:$mediumGrey;
   font-size: $smallFont;
-  font-family: $subtitle;
+  font-family: $paragraph;
   line-height: .1rem;
 }
+
+.smallText_username{
+@extend .smallText;
+color: $darkGrey;
+}
+
+.smallText_location{
+  @extend .smallText;
+  color: $mediumGrey;
+  margin-left:5px;
+  }
+
+  .locationContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top:-10px;
+  }
 
 .paragraphRow{
   text-align: left;
   margin: 0px 30px;
+}
+
+.locationIcon{
+  width:20px;
 }
 
 

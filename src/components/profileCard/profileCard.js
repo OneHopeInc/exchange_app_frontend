@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Link } from 'react-router-dom'
 import Pills from '../pills'
 import styles from './profileCard.module.scss'
+import LocationIcon from '../../assets/images/icons/location.svg'
 
 export default function ProfileCard() {
   return (
@@ -10,8 +11,11 @@ export default function ProfileCard() {
         <div className={styles.photoHolder}></div>
         <div className={styles.textHolder}>
           <h3>Liam Savage</h3>
-          <h5 className={styles.smallText}>@liam.s</h5>
-          <h6 className={styles.smallText}>Fort Laudadale</h6>
+          <h5 className={styles.smallText_username}>@liam.s</h5>
+          <div className={styles.locationContainer}>
+            <img src={LocationIcon} className={styles.locationIcon} />
+            <h6 className={styles.smallText_location}>Fort Laudadale</h6>
+          </div>
         </div>
       </div>
       <div className={styles.paragraphRow}>

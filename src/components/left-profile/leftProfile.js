@@ -3,9 +3,14 @@ import { BrowserRouter as Router, Routes, Link } from 'react-router-dom'
 import Pills from '../pills'
 import styles from './leftProfile.module.scss'
 import logo from '../../assets/images/indigitous.svg'
+import LocationIcon from '../../assets/images/icons/location.svg'
+import SettingsIcon from '../../assets/images/icons/settings.svg'
+
 export default function LeftProfile() {
   return (
     <div className={styles.profileContainer}>
+      <img src={SettingsIcon} className={styles.settingsIcon} />
+
       <div className={styles.logoContainer}>
         <img src={logo} className={styles.logo} />
       </div>
@@ -25,7 +30,10 @@ export default function LeftProfile() {
         </div>
       </div>
       <div className={styles.paragraphRow}>
-        <h6 className={styles.smallText}>Fort Laudadale</h6>
+        <div className={styles.locationContainer}>
+          <img src={LocationIcon} className={styles.locationIcon} />
+          <h6 className={styles.smallText_location}>Fort Laudadale</h6>
+        </div>
 
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
