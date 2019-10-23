@@ -11,7 +11,11 @@
 
 .subtitle{
     font-size: $bigFont;
-    line-height: 1;
+    margin: 0;
+    text-align: center;
+    @media screen and (max-width: $break-small) {
+        line-height: 1.2;
+  }
 }
 
 .subtext{
@@ -26,11 +30,44 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 40px;
+    @media screen and (max-width: $break-small) {
+        margin: 40px 0;
+  }
+    
 }
 
 .btn{
+    position: absolute;
     align-self: flex-end;
-    margin-right:40px;
-    margin-top:40px;
+    bottom: 40px;
+    right:40px;
+    @media screen and (max-width: $break-small) {
+        bottom: 20px;
+
+  }
+}
+
+.btn_connect{
+    text-align: center;
+}
+
+.btn_custom{    
+    @include wide-text;
+    background-color: $orange;
+    border-radius: 25px;
+    padding-left:20px;
+    padding-right:20px;
+    height:40px;
+    border: none;
+    outline: none;
+    font-family: $paragraph;
+    font-size: $smallFont;
+    align-self: center;
+    color: $white;
+    letter-spacing: .5;
+    &:hover{
+        background-color: $plum;
+    }
+
 
 }

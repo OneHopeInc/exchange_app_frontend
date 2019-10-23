@@ -6,6 +6,11 @@
   background: -moz-linear-gradient(bottom, $mediumBlue 80%, $white  20%); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom, $mediumBlue 80% , $white  20%); /* Standard syntax */
   margin-top:-25px;
+  @media screen and (max-width: $break-small) {
+    background: $mediumBlue;
+    height:100%;
+    width:100%;
+  }
   }
 
 .btnMain{
@@ -14,6 +19,9 @@
     left:50%; 
     transform:translate(-50%, -60%); 
     text-align: center;
+    @media screen and (max-width: $break-small) {
+     top:50%; 
+  }
 }
 
 .imageContainer{
@@ -23,9 +31,32 @@
   vertical-align: middle;
   margin: auto;
   height: 80vh;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+}
+
+.imageContainer_mobile{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  vertical-align: middle;
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+
+  @media screen and (min-width: $break-medium) {
+    display: none;
+  }
 }
 
 .image{
   object-fit: contain;
   // opacity: 1;
+  @media screen and (max-width: $break-small) {
+   height: 100%;
+  width: 100%;
+    object-fit: cover;
+
+  }
 }

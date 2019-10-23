@@ -23,9 +23,14 @@
     font-size: $mediumFont;
     letter-spacing: 1.5;
     margin: 10px;
-    font-size: $mediumFont;
     border: 1px solid $orange;
     padding: 10px 40px;
+    @media screen and (max-width: $break-small) {
+        height: 40px;
+        font-size: $smallFont;
+        padding: 10px 20px;
+        margin: 5px;
+  }
 
 }
 
@@ -45,6 +50,11 @@ background-color: $yellow;
         border:none;
     }
     font-size: $mediumFont;
+    @media screen and (max-width: $break-small) {
+        height: 50px;
+        width:80%;
+        font-size: $smallFont;
+  }
 }
 
 .btnxLarge_selected{

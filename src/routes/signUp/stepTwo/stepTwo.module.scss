@@ -20,5 +20,8 @@
   @media screen and (min-width: $break-large) {
     height: 450px;
   }
+  @media screen and (max-width: $break-small) {
+  width: 90%;
+  }
 
 }

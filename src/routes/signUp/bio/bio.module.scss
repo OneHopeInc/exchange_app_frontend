@@ -4,6 +4,12 @@
   display: flex;
 }
 
+.container{
+ @media screen and (max-width: $break-small) {
+  width: 100%;
+  }
+}
+
 .photoHolder{
   width: 120px;
   height:120px;
@@ -15,10 +21,17 @@
 
 .photoContainer{
   margin: 50px;
+   @media screen and (max-width: $break-small) {
+    margin: auto;
+  }
 }
 
 .bioContainer{
 margin: 40px;
+@media screen and (max-width: $break-small) {
+    margin: 40px 0;
+  }
+
 }
 
 .bioArea{
@@ -28,6 +41,9 @@ margin: 40px;
   width: 600px;
   font-size: $mediumFont;
   padding:15px;
+  @media screen and (max-width: $break-small) {
+  width: 80%;
+  }
 }
 
 

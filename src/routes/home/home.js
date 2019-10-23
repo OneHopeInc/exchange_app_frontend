@@ -4,6 +4,7 @@ import PrimaryNav from '../../components/primary-nav'
 import Button from '../../components/button'
 import { BrowserRouter as Router, Routes, Link } from 'react-router-dom'
 import homeImg from '../../assets/images/stories.png'
+import homeImg_Mobile from '../../assets/images/stories_mobile.png'
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
       <PrimaryNav />
       <div className={styles.imageContainer}>
         <img src={homeImg} className={styles.image} />
+      </div>
+      <div className={styles.imageContainer_mobile}>
+        <img src={homeImg_Mobile} className={styles.image} />
       </div>
       <div className={styles.btnMain}>
         <Link to="/signup">

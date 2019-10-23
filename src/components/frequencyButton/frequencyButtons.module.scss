@@ -17,6 +17,11 @@
       width: 200px;
       height: 200px;
     }
+     @media screen and (max-width: $break-small) {
+       width: 130px;
+      height: 150px;
+      margin:2px;
+  }
 }
 
 .iconBtn_selected{
@@ -27,4 +32,8 @@
 .icon{
   width: 80%;
   height: 80%;
+  @media screen and (max-width: $break-small) {
+    width: 80%;
+  height: 70%;
+  }
 }

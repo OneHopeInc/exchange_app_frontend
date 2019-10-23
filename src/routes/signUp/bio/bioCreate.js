@@ -27,7 +27,7 @@ export default function Bio() {
         <h1>Words of Hello</h1>
         <h5>Setup your profile</h5>
 
-        <div>
+        <div className={styles.container}>
           <div className={styles.photoContainer}>
             <div className={styles.photoHolder}></div>
             <Button text="Upload Photo" btn_style="small" />

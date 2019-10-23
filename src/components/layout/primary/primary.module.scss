@@ -4,6 +4,9 @@ h2{
   color: $white;
   line-height: 1.5em;
   font-size: $bigFont;
+  @media screen and (max-width: $break-small) {
+  font-size: $mediumFont;
+  }
 }
 
 .flex{
@@ -39,7 +42,7 @@ opacity: .8;
 .logoContainer{
   position: absolute;
   top: 20px;
-  left: 70px;
+  left: 20px;
 
 }
 
@@ -48,17 +51,24 @@ opacity: .8;
   width: 150px;
   height: 150px;
   @media screen and (max-width: $break-small) {
-    width: 50px;
-  height:50px;
+    width: 70px;
+    height:70px;
   }
 }
 
 .textContainer{
   width: 25%;
   position:absolute; 
-    top:50%; 
-    left:10%; 
-    transform:translate(-10%, -50%); 
+  top:50%; 
+  left:10%; 
+  transform:translate(-10%, -50%); 
+  @media screen and (max-width: $break-small) {
+    width: 90%;
+    position:absolute; 
+    text-align: center;
+    top:150px;
+    margin: 0 20px;
+  }
 }
 
 .colRight{

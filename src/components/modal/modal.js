@@ -10,6 +10,8 @@ import Moon from '../../assets/images/icons/moon.png'
 import Monthly from '../../assets/images/icons/monthly.png'
 import BiWeekly from '../../assets/images/icons/bi-weekly.png'
 import FrequencyButton from '../frequencyButton/frequencyButtons'
+import ProfileCard from '../profileCard'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 function Time(props) {
   let [selected, setSelected] = useState([], 0)
@@ -107,9 +109,17 @@ function Match(props) {
       <h3 className={styles.subtitle}>
         We're 95% positive you'll enjoy meeting
       </h3>
-      <div className={styles.row}></div>
-      <div className={styles.btn}>
-        <Button text="Next" btn_style="medium" onClick={props.handleNext} />
+      <div className={styles.row}>
+        <ProfileCard />
+      </div>
+      <div className={styles.btn_connect}>
+        <Link to="/exchange">
+          <Button
+            text="Connect With Liam"
+            className={styles.btn_custom}
+            onClick={props.handleNext}
+          />
+        </Link>
       </div>
     </div>
   )

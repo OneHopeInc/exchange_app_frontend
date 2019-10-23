@@ -11,6 +11,7 @@
     @media screen and (max-width: $break-small) {
         padding: 50px 0;
         justify-content: space-around;
+        display: none;
       }
     li{
         list-style-type: none;
@@ -36,11 +37,47 @@
     position: absolute;
     top: 5px;
     left: 70px;
-
+    @media screen and (max-width: $break-small) {
+        left: 20px;
+      }
 }
+
 
 .logo{
     object-fit: contain;
     width: 100px;
     height: 100px;
+}
+
+.menuContainer{
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    @media screen and (min-width: $break-medium) {
+        display: none;
+    }
+
+}
+
+.menu{
+    width:40px;
+    height:40px;
+}
+
+.dropDown{
+    width: 50%;
+    height: 200px;
+    background-color: $white;
+    position: absolute;
+    right: 0;
+    padding:20;
+    color:$orange;
+    margin-top:30px;
+}
+
+.close{
+    padding:10px;
+    color: $orange;
+    text-align: right;
+    font-size: $mediumFont;
 }
