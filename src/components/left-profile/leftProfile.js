@@ -9,7 +9,7 @@ import SettingsIcon from '../../assets/images/icons/settings.svg'
 export default function LeftProfile() {
   return (
     <div className={styles.profileContainer}>
-      <img src={SettingsIcon} className={styles.settingsIcon} />
+      {/* <img src={SettingsIcon} className={styles.settingsIcon} /> */}
 
       <div className={styles.logoContainer}>
         <img src={logo} className={styles.logo} />

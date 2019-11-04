@@ -4,7 +4,7 @@ import AppLayout from '../../components/layout/app'
 import LeftProfile from '../../components/left-profile'
 import UserExchange from '../../components/userExchange'
 
-export default function Dashboard() {
+export default function Exchange() {
   return (
     <AppLayout activeNav="Exchange">
       <div className={styles.container}>

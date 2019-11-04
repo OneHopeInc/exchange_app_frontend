@@ -14,6 +14,7 @@ import Bio from '../../../routes/signUp/bio'
 import ProfileConfirmation from '../../../routes/signUp/profile'
 import Intro from '../../../routes/setup/intro'
 import Setup from '../../../routes/setup/main'
+import Profile from '../../../routes/profile'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -36,6 +37,7 @@ export default function AppRouter() {
       <Route path="/connections/" component={Connections} />
       <Route path="/calendar/" component={Calendar} />
       <Route path="/exchange/" component={Exchange} />
+      <Route path="/profile/" component={Profile} />
 
       <Route path="/oauth2/redirect" component={OAuth2RedirectHandler}></Route>
       {/* <Route component={NotFound}></Route> */}

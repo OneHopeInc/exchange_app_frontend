@@ -1,0 +1,31 @@
+@import '../../utils/globals';
+
+.container{
+  position: relative;
+  margin-left: 27%;
+}
+
+
+.backBtn{
+  text-align: left;
+  margin-left: 20px;
+  color: $orange;
+  display: flex;
+  flex-direction: row;
+  i{
+    font-size: 30px;
+    margin-left: 10px;
+
+  }
+  h3{
+    // font-size: $mediumFont;
+    margin-top:10px;
+    margin-left:20px;
+    color: $orange;
+
+  }
+
+  &:hover{
+    color: $plum;
+  }
+}

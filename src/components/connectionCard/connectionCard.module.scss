@@ -5,6 +5,10 @@
     height:140px;
     border: 1px solid $lightGrey;
     margin: 10px;
+    &:hover{
+      transform: scale(1.02);
+      border: 1px solid $mediumGrey;
+    }
   }
 
 .row{
