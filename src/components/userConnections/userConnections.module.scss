@@ -16,13 +16,6 @@
   }
 }
 
-.searchContainer{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-}
-
 .row{
   display: flex;
   flex-direction: row;
@@ -40,9 +33,7 @@
   font-size: 14px;
   font-family: $title;
   font-weight: 400;
-
 }
-
 
 
 

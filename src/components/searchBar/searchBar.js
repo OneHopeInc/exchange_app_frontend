@@ -8,7 +8,6 @@ export default function SearchBar(props) {
     <div>
       <div className={styles.searchInput}>
         <img src={SearchIcon} className={styles.searchIcon} />
-        <p className={styles.inputText}>{props.text}</p>
         <input
           type={props.type}
           name={props.name}

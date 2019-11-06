@@ -2,17 +2,16 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Link } from 'react-router-dom'
 import Pills from '../pills'
 import styles from './profileBreadcrumb.module.scss'
-import logo from '../../assets/images/indigitous.svg'
-import LocationIcon from '../../assets/images/icons/location.svg'
-import SettingsIcon from '../../assets/images/icons/settings.svg'
+import ProfileNav from '../profile-nav'
 
 export default function ProfileBreadcrumb() {
   return (
     <div className={styles.container}>
-      <div className={styles.backBtn}>
+      <div className={styles.breadcrumb}>
         <i className="fa fa-arrow-left large-icon"></i>
         <h3>Liam's Profile</h3>
       </div>
+      <ProfileNav screen="Profile" />
     </div>
   )
 }

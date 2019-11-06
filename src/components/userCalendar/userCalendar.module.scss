@@ -6,6 +6,7 @@
   position: relative;
   margin-left: 27%;
   padding-right: 20px;
+  overflow: hidden;
   @media screen and (max-width: $break-small) {
     width:100%;
     margin: 65% 0 0 10px;
@@ -16,9 +17,12 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
   margin:auto;
   margin-top:50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   @media screen and (max-width: $break-small) {
     justify-content: center;
   }
@@ -33,6 +37,7 @@
 
 .calendarColumn{
     width:25%;
+    min-width: 25%;
     background-color: $lightGrey;
     min-height: 500px;
     border-radius: 10px;
@@ -48,6 +53,11 @@
       margin-bottom: 10px;
     }
     
+}
+
+.calendarColumn_next{
+  @extend .calendarColumn;
+  background-color: $mediumGrey;
 }
 
 

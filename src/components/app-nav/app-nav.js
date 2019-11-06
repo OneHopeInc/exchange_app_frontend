@@ -34,6 +34,9 @@ export default function AppNav(props) {
             <Link to="/exchange">Exchange</Link>
           </li>
         )}
+        <li>
+          EN <i className="fa fa-angle-down large-icon"></i>
+        </li>
       </ul>
     </nav>
   )

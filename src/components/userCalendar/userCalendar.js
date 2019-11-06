@@ -23,6 +23,12 @@ export default function UserCalendar() {
           <CalendarItem type="Exchange" />
           <CalendarItem type="Meeting" />
         </div>
+        <div className={styles.calendarColumn_next}>
+          <p>Thursday 8th</p>
+
+          <CalendarItem type="Exchange" />
+          <CalendarItem type="Meeting" />
+        </div>
       </div>
     </div>
   )

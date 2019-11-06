@@ -21,6 +21,9 @@ export default function PrimaryNav() {
         <li>
           <Link to="/">Indigitous</Link>
         </li>
+        <li>
+          EN <i className="fa fa-angle-down large-icon"></i>
+        </li>
       </ul>
       <div
         className={styles.menuContainer}

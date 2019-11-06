@@ -15,12 +15,12 @@
 
 .btnMain{
   position:absolute; 
-    top:60%; 
+    top:62%; 
     left:50%; 
     transform:translate(-50%, -60%); 
     text-align: center;
     @media screen and (max-width: $break-small) {
-     top:50%; 
+     top:60%; 
   }
 }
 
@@ -59,4 +59,31 @@
     object-fit: cover;
 
   }
+}
+
+.selectContainer{
+  position:absolute; 
+  top:55%; 
+  left:50%; 
+  transform:translate(-50%, -60%); 
+  text-align: center;
+  border-radius:60px;
+  display:inline-block;
+  overflow:hidden;
+  @media screen and (max-width: $break-small) {
+   top:50%; 
+}
+}
+
+.selectList{
+  border-radius: 25px;
+  height:45px;
+  width: 200px;
+  font-size: $mediumFont;
+font-family: $title !important;
+}
+
+.selectItem{
+  font-family: $title !important;
+
 }

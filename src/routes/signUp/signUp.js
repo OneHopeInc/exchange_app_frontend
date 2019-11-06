@@ -45,6 +45,23 @@ export default function SignUp() {
         <h5>Or Use Your Email Address</h5>
 
         <div className={styles.form}>
+          <p className={styles.inputText}>Language:</p>
+          <div className={styles.selectContainer}>
+            <select className={styles.selectList}>
+              <option default value="grapefruit" className={styles.selectItem}>
+                English
+              </option>
+              <option value="lime" className={styles.selectItem}>
+                Español
+              </option>
+              <option value="coconut" className={styles.selectItem}>
+                Deutsch
+              </option>
+              <option value="mango" className={styles.selectItem}>
+                Français
+              </option>
+            </select>
+          </div>
           <TextInput text="Email" name="email" size="large" type="email" />
           <TextInput
             text="Password"

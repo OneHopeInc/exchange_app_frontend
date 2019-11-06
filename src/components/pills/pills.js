@@ -66,6 +66,6 @@ export default function Pills(props) {
       </button>
     )
   } else {
-    return <button type="button">Click Me</button>
+    return <button className={styles.btnRegular}>{props.text}</button>
   }
 }

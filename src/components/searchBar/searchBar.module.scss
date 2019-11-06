@@ -4,6 +4,7 @@
     width: 250px;
     margin-bottom: 10px;
     margin-right:80px;
+    position: relative;
     @media screen and (max-width: $break-small) {
         width: 200px;
         margin-right:45px;
@@ -34,8 +35,8 @@
     .searchIcon{
         width: 20px;
         position: absolute;
-        top:20px;
-        right:315px;
+        top:10px;
+        right:210px;
         @media screen and (max-width: $break-small) {
             top:30px;
         right:220px;

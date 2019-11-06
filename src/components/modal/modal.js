@@ -14,9 +14,6 @@ import ProfileCard from '../profileCard'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 function Time(props) {
-  let [selected, setSelected] = useState([], 0)
-  //initial selected state
-  let initialSelected = []
   return (
     <div className={styles.container}>
       <h1 className={styles.title}> A Fine Time</h1>
