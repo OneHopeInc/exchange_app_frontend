@@ -9,7 +9,7 @@ export default function UserCalendar() {
       <div className={styles.row}>
         <div className={styles.calendarColumn}>
           <p>Monday 21st</p>
-          <CalendarItem type="Exchange" />
+          <CalendarItem type="Exchange" past={true} />
           <CalendarItem type="Meeting" />
         </div>
         <div className={styles.calendarColumn}>

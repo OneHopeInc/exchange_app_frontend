@@ -47,6 +47,17 @@ margin:25px 0;
   font-size: $smallFont;
 }
 
+.review{
+  font-size: $smallFont;
+  text-align: right;
+  color:$orange;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover{
+    color: $plum;
+  }
+}
+
 .exchangeIcon{
   width:20px;
 }

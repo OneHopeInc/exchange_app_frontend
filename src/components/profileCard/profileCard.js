@@ -4,7 +4,7 @@ import Pills from '../pills'
 import styles from './profileCard.module.scss'
 import LocationIcon from '../../assets/images/icons/location.svg'
 
-export default function ProfileCard() {
+export default function ProfileCard(props) {
   return (
     <div className={styles.profileBorder}>
       <div className={styles.row}>

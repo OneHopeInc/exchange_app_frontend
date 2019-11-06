@@ -4,6 +4,7 @@ import ExchangeIcon from '../../assets/images/icons/exchange-arrows.svg'
 
 export default function CalendarItem(props) {
   const type = props.type
+  const past = props.past
   return (
     <div className={styles.container}>
       {type == 'Exchange' ? (
@@ -20,6 +21,7 @@ export default function CalendarItem(props) {
             Their Time: <span>11.15am</span>
           </div>
           <h3 className={styles.type}>{type}</h3>
+          {past ? <h3 className={styles.review}>Review Meeting</h3> : null}
         </div>
       ) : type == 'Meeting' ? (
         <div>
